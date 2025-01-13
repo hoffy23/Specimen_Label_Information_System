@@ -1,0 +1,138 @@
+.table-container {
+	max-width: 100%;
+	overflow-x: auto;
+	margin: 20px 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.table-container table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #ffffff;
+	font-family: Arial, sans-serif;
+}
+
+.table-container thead {
+	background-color: #f8f9fa;
+}
+
+.table-container th {
+	padding: 12px 15px;
+	text-align: left;
+	font-weight: bold;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 14px;
+	border-bottom: 2px solid #ddd;
+}
+
+.table-container td {
+	padding: 12px 15px;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+	color: #666;
+}
+
+.table-container tr:nth-child(even) {
+	background-color: #f8f9fa;
+}
+
+.table-container tbody tr:hover {
+	background-color: #f1f3f5;
+	transition: background-color 0.3s ease;
+}
+
+/* Expanded rows */
+.expanded {
+	background-color: #e9ecef;
+}
+
+.expanded-row td {
+	padding: 0;
+}
+
+.expanded-content {
+	padding: 15px;
+	background-color: #f8f9fa;
+	border-top: 1px solid #dee2e6;
+}
+
+.expanded-content p {
+	margin: 5px 0;
+}
+
+/* Expand Button Styles */
+.expand-btn {
+	background-color: #002664;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 12px;
+	transition: background-color 0.3s ease;
+}
+.button-container {
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+.button-container button:hover {
+	background-color: #0056b3;
+}
+
+.button-container button {
+	background-color: #002664;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+@media print {
+	body * {
+		visibility: hidden;
+	}
+
+	.print-only,
+	.print-only * {
+		visibility: visible;
+	}
+
+	.print-only {
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+		width: 100%;
+		max-width: 800px;
+	}
+
+	.expand-btn,
+	.expand-all-btn {
+		display: none;
+	}
+
+	.expanded-row {
+		display: table-row !important;
+	}
+
+	.expanded-content {
+		display: block !important;
+	}
+
+	.print-only table {
+		width: 100%;
+	}
+
+	.print-only table {
+		font-size: 10pt;
+	}
+
+	.print-only th,
+	.print-only td {
+		padding: 5pt;
+	}
+}

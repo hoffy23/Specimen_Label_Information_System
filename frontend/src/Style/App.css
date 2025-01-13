@@ -1,0 +1,256 @@
+
+/*Global Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Public Sans', 'Arial', sans-serif;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #002664;
+    color: #FFFFFF;
+    font-size: 0.875rem;
+    line-height: 1.35;
+    font-weight: 700;
+    padding-left: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.container-hero {
+    display: flex;
+    flex-wrap: wrap; /* Remove this line for staff NAME to fall to the next line */
+    flex-direction: row;
+    padding: 1.25rem;
+}
+
+.container-hero #comapany-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.container-hero #agency-name {
+    align-content: flex-end;
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding-left: 1.75rem;
+    color: #002664;
+}
+
+.container-hero #staff-name {
+    align-content: flex-end;
+    margin-left: auto;
+    font-size: 1.50rem;
+    font-weight: 700;
+    padding-right: 2.75rem;
+    color: #000000;
+}
+
+.container-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 80vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.navitem {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: 1px solid #000000;
+    list-style: none;
+}
+.navbar-item-text {
+    flex: 1;
+}
+
+/*Link Styles*/
+a {
+    text-decoration: none;
+    color: #000000;
+    padding-left: 1rem;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+.down-arrow {
+    margin-left: auto;
+}
+.container-content {
+    padding: 1.25rem;
+    width: 100%;
+    background-color: #ebebeb;
+    height: 80vh;
+}
+
+#MRNRequestPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-page {
+    text-align: center;
+}
+.PatientMRNRequest {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#input-textbox-mrn-input {
+    padding: 1rem;
+}
+.btn-blue {
+    background-color: #002664;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 1.25rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+#mrn-request-label {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#MRN-information {
+    background-color: #D9D9D9;
+    width: 13%;
+    height: 5vh;
+    padding: 0.5rem 0.5rem;
+}
+
+#patient-information {
+    background-color: #D9D9D9;
+    width: 13%;
+    height: max-content;
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+}
+.patient-data {
+    padding: 0.5rem 0rem;
+}
+#Label-button-save-print {
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+}
+.Options-Dropdown-Label {
+    background-color: #FFFFFF;
+    padding-left: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    height: 5vh;
+    width: 13%;
+}
+.printed-label-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #000000;
+    margin-top: 2rem;
+}
+
+.table-heading, .table-data {
+    padding: 10px;
+    text-align: left;
+}
+.table-row {
+    border: 1px solid #000000;
+}
+
+#CompletedLabelPage {
+    height: max-content;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.button-cta-right {
+    position: relative;
+    display: block;
+    background-color: #002664;
+    color: #FFFFFF;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 1.25rem;
+    font-weight: 500;
+}
+
+#SearchLabelPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mrn-serach-label {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#input-textbox-mrn-input-search {
+    padding: 1rem;
+}
+
+#Options-Label {
+    width: max-content;
+    margin-top: 1rem;
+}
+
+.Option-DropDown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Print-information {
+    background-color: #D9D9D9;
+    width: max-content;
+    height: max-content;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#PrintLabelPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+}
+
+#Options-PrintLabel {
+    width: max-content;
+    margin-top: 1rem;
+    display: flex;
+}
+
+#EditLabelPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+}
